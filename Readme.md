@@ -11,6 +11,7 @@ A full-stack blog application built with Vue 3, NestJS, and GraphQL, featuring u
 ### Installation
 1.  Clone the repository.
 2.  Install dependencies for the entire project (root, frontend, and backend):
+
     ```bash
     npm run install:all
     ```
