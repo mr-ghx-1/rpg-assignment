@@ -1,19 +1,54 @@
-## Assignment 
-The application should have the following features:
-- User authentication: The application should allow users to create an account and log in.
-- Blog creation: Users should be able to write simple blog posts consisting of just plain text.
-- Real-time notifications: Whenever a new blog is published by any user, all the users on the platform should be notified in real-time (without requiring a page reload) in the application itself.
+# rePurpose Blog Application
 
-To match our current technical stack, we prefer the solution using:
-- Vue 3
-- Node.js (preferred Nest.js)
-- GraphQL
-- **SQL database (required)** - Please use a SQL database (e.g., PostgreSQL, MySQL, SQLite) for data persistence. This helps standardize submissions and provides more content for us to follow-up on during the review process.
+A full-stack blog application built with Vue 3, NestJS, and GraphQL, featuring user authentication, blog creation, and real-time notifications.
+
+## Project Setup
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm
+
+### Installation
+1.  Clone the repository.
+2.  Install dependencies for the entire project (root, frontend, and backend):
+    ```bash
+    npm run install:all
+    ```
+    *Alternatively, you can run `npm install` in the root, `frontend`, and `backend` directories separately.*
+
+## Running the Application
+
+To start both the backend and frontend servers concurrently:
+
+```bash
+npm start
+```
+
+- **Frontend**: http://localhost:5173
+- **Backend**: http://localhost:3000
+- **GraphQL Playground**: http://localhost:3000/graphql
+
+## Features
+
+- **User Authentication**: Secure Signup and Login functionality using JWT.
+- **Blog Management**: Create and view blog posts.
+- **Real-time Notifications**: Instant notifications for new posts using GraphQL Subscriptions.
+- **Modern UI**: Clean, responsive interface styled with CSS Flexbox and Grid.
+- **End-to-End Type Safety**: TypeScript used across the full stack.
+
+## Tech Stack
+
+- **Frontend**: Vue 3 (Composition API), Vite, Apollo Client, Pinia
+- **Backend**: NestJS, GraphQL (Code First), TypeORM, SQLite
+- **Database**: SQLite (Zero-config SQL database)
+
+## Testing
+
+To run tests/checks for both projects:
+
+```bash
+npm test
+```
 
 
-### Notes
-- This project has been set up with Vue3 (Not Nuxt 3) and Nest.js with Graphql. It has a hello world graphql and REST endpoint.
-- For the purposes of this project, please avoid Firebase and other Backend-as-a-Service tools because they abstract away too many implementation details for us to properly grade submissions.
 
-### Submission Requirements
-- **Video demonstration**: Please submit a video demonstrating the app working. The video should show all the required features in action (user authentication, blog creation, and real-time notifications).
