@@ -2,6 +2,10 @@
 
 A full-stack blog application built with Vue 3, NestJS, and GraphQL, featuring user authentication, blog creation, and real-time notifications.
 
+## Demo
+
+[![Watch the Demo Walkthrough](docs/assets/demo_thumbnail.png)](https://drive.google.com/file/d/1WkD3mSYHj2bM5qQQamJRw9upbMn17bc5/view?usp=drive_link)
+
 ## Project Setup
 
 ### Prerequisites
